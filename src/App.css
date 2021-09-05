@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  /*tidak bisa scroll kanan*/
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#beranda {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(53 54 58);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav1 {
+  width: 100%;
+  height: 15vh;
+  /* background-color: aquamarine; */
   display: flex;
-  flex-direction: column;
+}
+
+.nav2 {
+  width: 50%;
+  height: 100%;
+  background: rgb(34, 35, 37);
+}
+
+.ruang-admin {
+  width: 80%;
+  height: 100%;
+  /* background-color: rgb(53 54 58); */
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.account {
+  font-size: 45px;
+  position: relative;
+  left: 75px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  align-items: center;
+  position: relative;
+  top: 4px;
+  left: 85px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav3 {
+  width: 50%;
+  height: 100%;
+  background: rgb(34, 35, 37);
+}
+
+.ruang-fiture {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: rgb(87, 72, 54); */
+}
+
+.edit {
+  position: relative;
+  left: 200px;
+  width: auto;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  font-weight: bold;
+}
+
+.bahasa {
+  position: relative;
+  left: 170px;
+  width: auto;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  font-weight: bold;
+}
+
+.home {
+  position: relative;
+  left: 140px;
+  width: auto;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  font-weight: bold;
 }
