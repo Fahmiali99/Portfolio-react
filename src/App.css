@@ -105,7 +105,19 @@ body {
   font-weight: bold;
 }
 
+.cek {
+  opacity: 0;
+}
+
+.menu-fiture {
+  display: flex;
+}
+
 @media screen and (max-width: 768px) {
+  .nav1 {
+    height: 10vh;
+  }
+
   #beranda {
     width: 100%;
     height: 100vh;
@@ -113,6 +125,7 @@ body {
 
   .ruang-admin {
     width: 80%;
+    display: none;
   }
 
   .account {
@@ -120,9 +133,117 @@ body {
     position: relative;
     left: 15px;
   }
+
   #name {
     font-size: 14px;
     position: relative;
     left: 20px;
+  }
+
+  .ruang-fiture {
+    display: none;
+  }
+
+  /* Haumbergert menu */
+  .menu-toggle {
+    position: relative;
+    float: right;
+    right: 25px;
+    top: 25px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    /* background-color: black; */
+    justify-content: space-between;
+  }
+
+  .menu-toggle input {
+    position: absolute;
+    width: 50px;
+    height: 28px;
+    opacity: 0;
+    left: -11px;
+    top: -3px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.5s;
+  }
+
+  /* Humberger menu animation */
+
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0px);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .ruang-fiture .menu-fiture {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(56, 54, 54);
+    /* z-index: -1; */
+
+    /* position: relative;
+    float: left;
+    left: 100px; */
+  }
+
+  .home {
+    width: 30%;
+    height: 5%;
+    position: absolute;
+    top: 135px;
+  }
+
+  .bahasa {
+    width: 30%;
+    height: 5%;
+    position: absolute;
+    left: 139px;
+    top: 235px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .edit {
+    width: 30%;
+    height: 5%;
+    position: absolute;
+    left: 139px;
+    top: 335px;
+    display: flex;
+    justify-content: center;
   }
 }
